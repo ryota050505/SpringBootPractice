@@ -20,7 +20,9 @@ thymeleaf・DTOを勉強するために作成したリポジトリ
 ./gradlew mbGenerator
 ```
 
-Mapperには`@Mapper`アノテーションを付ける必要がある。
+~~Mapperには`@Mapper`アノテーションを付ける必要がある。~~
+
+generatorConfig.xmlにpluginを記載することで自動的に付与
 
 ### generatorConfig.xml
 

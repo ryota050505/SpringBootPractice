@@ -1,7 +1,6 @@
 package com.example.coco.service;
 
 import com.example.coco.dto.UserDto;
-import com.example.coco.model.User;
 import com.example.coco.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

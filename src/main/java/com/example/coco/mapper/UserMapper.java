@@ -3,7 +3,6 @@ package com.example.coco.mapper;
 import com.example.coco.entity.User;
 import com.example.coco.entity.UserExample;
 import java.util.List;
-
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

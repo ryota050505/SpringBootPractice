@@ -3,8 +3,10 @@ package com.example.coco.mapper;
 import com.example.coco.entity.FlywaySchemaHistory;
 import com.example.coco.entity.FlywaySchemaHistoryExample;
 import java.util.List;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
+@Mapper
 public interface FlywaySchemaHistoryMapper {
     long countByExample(FlywaySchemaHistoryExample example);
 

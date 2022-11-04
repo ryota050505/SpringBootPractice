@@ -6,6 +6,16 @@
 
 <generatorConfiguration>
     <context id="MySQLTables" targetRuntime="MyBatis3">
+
+        <!-- Mapperクラスにアノテーションを付けるためのプラグイン -->
+        <plugin type="org.mybatis.generator.plugins.MapperAnnotationPlugin">
+            <property name="@Mapper" value="true"/>
+        </plugin>
+
+        <!-- Mapper.xmlファイルを生成時に上書きするためのプラグイン -->
+        <!-- これが無いと、同じファイルに同じ内容が追記されてしまう -->
+        <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin"/>
+
         <!-- 生成される Java ファイルのコメントに日付を付与しない -->
         <commentGenerator>
             <property name="suppressAllComments" value="true"/>

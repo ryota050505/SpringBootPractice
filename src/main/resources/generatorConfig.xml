@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd"
+        >
 
 <generatorConfiguration>
-    <context id="PostgresTables" targetRuntime="MyBatis3">
+    <context id="MySQLTables" targetRuntime="MyBatis3">
+        <!-- 生成される Java ファイルのコメントに日付を付与しない -->
+        <commentGenerator>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
 
         <!-- スキーマ情報を取得する DB への接続設定 -->
         <jdbcConnection
@@ -29,7 +36,7 @@
         </javaClientGenerator>
 
         <!-- コードを生成するテーブルを指定 -->
-        <table schema="coco" tableName="demo">
+        <table schema="coco" tableName="%">
         </table>
 
     </context>

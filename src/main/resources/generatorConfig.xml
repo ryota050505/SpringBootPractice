@@ -46,7 +46,7 @@
         </javaClientGenerator>
 
         <!-- コードを生成するテーブルを指定 -->
-        <table schema="coco" tableName="%">
+        <table schema="coco" tableName="user">
         </table>
 
     </context>

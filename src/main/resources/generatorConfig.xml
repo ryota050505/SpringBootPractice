@@ -12,6 +12,10 @@
             <property name="@Mapper" value="true"/>
         </plugin>
 
+        <!-- RowBoundsオブジェクトを使用したLimit, Offsetの指定ができる -->
+        <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin">
+        </plugin>
+
         <!-- Mapper.xmlファイルを生成時に上書きするためのプラグイン -->
         <!-- これが無いと、同じファイルに同じ内容が追記されてしまう -->
         <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin"/>

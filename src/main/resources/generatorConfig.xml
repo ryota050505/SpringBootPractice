@@ -48,6 +48,12 @@
         <!-- コードを生成するテーブルを指定 -->
         <table schema="coco" tableName="user">
         </table>
+        <table schema="coco" tableName="user_information">
+        </table>
+        <table schema="coco" tableName="role">
+        </table>
+        <table schema="coco" tableName="r_user_role">
+        </table>
 
     </context>
 </generatorConfiguration>

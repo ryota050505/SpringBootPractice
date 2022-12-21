@@ -16,6 +16,16 @@
         <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin">
         </plugin>
 
+        <!-- エンティティクラスでLombokを使用するためのプラグイン -->
+        <plugin type="com.itfsw.mybatis.generator.plugins.LombokPlugin">
+            <property name="@Data" value="true"/>
+            <property name="@Builder" value="true"/>
+            <property name="@AllArgsConstructor" value="true"/>
+            <property name="@NoArgsConstructor" value="true"/>
+            <property name="@Accessors(chain = true)" value="false"/>
+            <property name="supportSuperBuilderForIdea" value="false"/>
+        </plugin>
+
         <!-- Mapper.xmlファイルを生成時に上書きするためのプラグイン -->
         <!-- これが無いと、同じファイルに同じ内容が追記されてしまう -->
         <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin"/>

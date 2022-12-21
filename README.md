@@ -74,3 +74,7 @@ mybatis.mapper-locations=classpath*:/db/mapper/*.xml
 自作でのCustom Pluginの作成も可能だが、その場合は他プロジェクトで一旦buildし、.jarファイルにする必要がある。
 
 （そして子プロジェクトの作成がかなり面倒だったので今回は無し）
+
+## OAuth2 認可
+
+[GitHub OAuth Apps](https://github.com/settings/applications/2069999)を使用している

@@ -1,0 +1,13 @@
+server:
+  port: 8082
+spring:
+  profiles:
+    active: local
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: # 自身のclient-id
+            client-secret: # 自身のclient-secret
+            client-name: # github name

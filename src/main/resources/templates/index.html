@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Index</title>
+    <link th:href="@{/webjars/bootstrap/5.2.2/css/bootstrap.min.css}" rel="stylesheet">
 </head>
 <body>
-<div>Test</div>
+<div>Index</div>
 <div>
+
+    <form role="form" id="logout" th:action="@{/logout}" method="post">
+        <button type="submit">ログアウト</button>
+    </form>
     <a th:href="@{/users}">
         ユーザー一覧
     </a>
 </div>
+<script th:src="@{/webjars/bootstrap/5.2.2/js/bootstrap.min.js}"></script>
 </body>
 </html>

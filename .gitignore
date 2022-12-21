@@ -39,3 +39,6 @@ out/
 ### docker ###
 docker/mysql/data/
 docker/mysql/sql/
+
+### application local ###
+application-local.yml
